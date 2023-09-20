@@ -11,7 +11,7 @@ class Isdocker < Formula
   # depends_on "cmake" => :build
 
   def install
-    bin.install "isdocker"
+    bin.install "."
     #bin.install "isdocker" => "isdocker"
     # ENV.deparallelize  # if your formula fails when building in parallel
     # Remove unrecognized options if warned by configure
