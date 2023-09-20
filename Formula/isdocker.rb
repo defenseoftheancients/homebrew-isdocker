@@ -11,8 +11,8 @@ class Isdocker < Formula
   # depends_on "cmake" => :build
 
   def install
-    system "cmake", "-S", ".", "-B", "build", *std_cmake_args
-    bin.install "bin/isdocker" => "isdocker"
+    libexec.install Dir["*"]
+    bin.write_exec_script libexec/"bin/isdocker"
     # ENV.deparallelize  # if your formula fails when building in parallel
     # Remove unrecognized options if warned by configure
     # https://rubydoc.brew.sh/Formula.html#std_configure_args-instance_method
