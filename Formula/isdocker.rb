@@ -5,7 +5,7 @@ class Isdocker < Formula
   desc ""
   homepage ""
   url "https://github.com/defenseoftheancients/isdocker/archive/refs/tags/1.0.0.tar.gz"
-  sha256 "023b45d397aa6a395ad6fa0131236ac9cc99f6ec5f58aa7655d1e0bbbe89e35e"
+  sha256 "e7b6b907b5cd8ead42476b07164da9ad044d777d117f701e71cb17f477df2952"
   license ""
 
   # depends_on "cmake" => :build
